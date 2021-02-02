@@ -33,7 +33,7 @@ function daysOld(){
         return "";
     else 
         return "That means I'm at least "
-                .number_format(($_GET['age']) * 365 )
+                .number_format(htmlspecialchars($_GET['age']) * 365 )
                 ." days old."; 
 }
 ?>
